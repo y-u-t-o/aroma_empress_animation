@@ -1,0 +1,138 @@
+.headerNav__item:nth-child(5) {
+  background-color: rgba(51, 51, 51, .3);
+}
+
+.sectionTitle {
+  margin-bottom: 50px;
+
+  .sectionTitle__img {
+    display: none;
+  }
+
+  .sectionTitle__sub {
+    margin-left: 20px;
+  }
+}
+
+.review {
+  width: 80%;
+  margin: 150px auto 0;
+
+  .review__desc {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 100px;
+  }
+
+  .reviewBox {
+    width: 70%;
+    margin: 50px auto 130px;
+
+    .reviewBox__img {
+      width: 20%;
+      height: 180px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .reviewBox__content {
+      width: 70%;
+
+      .reviewBox__content-title {
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        border-bottom: 2px solid #333;
+
+        .reviewBox__content-titleCat {
+          font-size: 24px;
+          margin-bottom: 5px;
+        }
+
+        .reviewBox__content-titleName {
+          font-size: 20px;
+        }
+      }
+
+      .reviewBox__content-desc {
+        width: 100%;
+
+        .reviewBox__content-descCat {
+          letter-spacing: 2px;
+          line-height: 32px;
+        }
+      }
+    }
+  }
+
+  .reviewBox:nth-child(6) {
+    margin-bottom: 150px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .review {
+    .reviewBox {
+      .reviewBox__img {
+        width: 30%;
+      }
+
+      .reviewBox__content {
+        width: 60%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 896px) {
+  .review {
+    .reviewBox {
+      display: block;
+      width: 70%;
+      margin: 0 auto 80px;
+
+      .reviewBox__img {
+        width: 40%;
+        margin: 30px auto;
+      }
+
+      .reviewBox__content {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .review {
+    margin: 80px auto 0;
+
+    .review__desc {
+      font-size: 17px;
+      margin-bottom: 60px;
+    }
+
+    .reviewBox {
+      .reviewBox__img {
+        width: 60%;
+        height: auto;
+      }
+
+      .reviewBox__content {
+        text-align: center;
+        .reviewBox__content-title {
+          .reviewBox__content-titleCat {
+            font-size: 20px;
+          }
+
+          .reviewBox__content-titleName {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
